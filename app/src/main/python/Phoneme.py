@@ -101,16 +101,8 @@ phoneme_conversion = {
     'ZH': 'etc',  # seizure  S IY ZH ER
     # The following phonemes are not part of the CMU phoneme set, but are meant to fix bugs in the CMU dictionary
     'E21': 'E',  # E21 is used in ENGINEER
-    '_':'rest'
+    '.':'rest'
 }
-
-
-# input_encoding = locale.getdefaultlocale()[1]  # standard system encoding??
-# input_encoding = 'cp1252'
-input_encoding = 'utf-8'
-# input_encoding = 'utf-16'
-# input_encoding = 'latin-1'
-# input_encoding = 'iso-8859-1'
 
 
 # lists containing different accented vowels
@@ -498,7 +490,7 @@ def breakdownWord(word, recursive=False):
         elif letter in easy_consonants:
             phonemes.append(simple_convert[letter])
         elif letter == ' ':
-            phonemes.append("_")
+            phonemes.append(".")
         elif len(hammer(letter)) == 1:
             if not recursive:
                 phon = breakdownWord(hammer(letter[0]), True)

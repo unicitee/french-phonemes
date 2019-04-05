@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Tamara</string>
     <string name="action_settings">Settings</string>
-    <string name="btn_label">Get Phonemes</string>
+    <string name="btn_phonemes">Phonemes</string>
     <string name="place_holder">Bonjour</string>
+    <string name="btn_listening">Listen</string>
 </resources>
